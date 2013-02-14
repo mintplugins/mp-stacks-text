@@ -141,6 +141,6 @@ else{
 	/**
 	 * Filters which modify the text on putput
 	 */
-	require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/misc-functions/text-filters.php' );
+	require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/misc-functions/text-actions.php' );
 	
 }
