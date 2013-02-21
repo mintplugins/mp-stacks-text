@@ -9,8 +9,8 @@
 			'plugin_name' => __('Move Plugins Stacks', 'mp_stacks_text'), 
 			'plugin_message' => __('You require the Move Plugins Stacks plugin. Install it here.', 'mp_stacks_text'), 
 			'plugin_slug' => 'mp_stacks', 
-			'plugin_subdirectory' => 'mp_stacks/', 
-			'plugin_filename' => 'mp_stacks.php',
+			'plugin_subdirectory' => 'mp-stacks/', 
+			'plugin_filename' => 'mp-stacks.php',
 			'plugin_required' => true,
 			'plugin_download_link' => 'http://moveplugins.com'
 		);
