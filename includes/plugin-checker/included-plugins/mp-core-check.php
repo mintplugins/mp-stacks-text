@@ -1,6 +1,6 @@
 <?php
 /**
- * Install Theme Updater Plugin
+ * Install mp_core Plugin
  *
  */
  if (!function_exists('mp_core_plugin_check')){

@@ -70,12 +70,12 @@ function mp_stacks_text_textdomain() {
 
 
 	// Traditional WordPress plugin locale filter
-	$locale        = apply_filters( 'plugin_locale',  get_locale(), 'mp_stacks_text' );
-	$mofile        = sprintf( '%1$s-%2$s.mo', 'mp_stacks_text', $locale );
+	$locale        = apply_filters( 'plugin_locale',  get_locale(), 'mp-stacks-text' );
+	$mofile        = sprintf( '%1$s-%2$s.mo', 'mp-stacks-text', $locale );
 
 	// Setup paths to current locale file
 	$mofile_local  = $mp_stacks_text_lang_dir . $mofile;
-	$mofile_global = WP_LANG_DIR . '/mp_stacks_text/' . $mofile;
+	$mofile_global = WP_LANG_DIR . '/mp-stacks-text/' . $mofile;
 
 	if ( file_exists( $mofile_global ) ) {
 		// Look in global /wp-content/languages/mp_stacks_text folder
@@ -111,7 +111,7 @@ if (!function_exists('mp_core_textdomain')){
 	/**
 	 * Check if wp_core in installed
 	 */
-	include_once( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/included-plugins/mp_core_check.php' );
+	include_once( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/included-plugins/mp-core-check.php' );
 	
 }
 /**
@@ -126,7 +126,7 @@ elseif(!function_exists('mp_stacks_textdomain')){
 	/**
 	 * Check if wp_html_in_post in installed
 	 */
-	include_once( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/included-plugins/mp_stacks.php' );
+	include_once( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/included-plugins/mp-stacks.php' );
 }
 /**
  * Otherwise, if mp_core and mp_stacks are installed, carry out the plugin's functions
@@ -136,7 +136,7 @@ else{
 	/**
 	 * Modify Metabox for HTML repeater for posts
 	 */
-	require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/metaboxes/mp_stacks_text/mp_stacks_text.php' );
+	require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/metaboxes/mp-stacks-text/mp-stacks-text.php' );
 	
 	/**
 	 * Filters which modify the text on putput
