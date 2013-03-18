@@ -97,50 +97,52 @@ add_action( 'init', 'mp_stacks_text_textdomain', 1 );
 |--------------------------------------------------------------------------
 */
 
-
-/**
- * If mp_core isn't active, stop and install it now
- */
-if (!function_exists('mp_core_textdomain')){
-	
+function mp_stacks_text_include_files(){
 	/**
-	 * Include Plugin Checker
+	 * If mp_core isn't active, stop and install it now
 	 */
-	require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/plugin-checker.php' );
-	
-	/**
-	 * Check if wp_core in installed
-	 */
-	include_once( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/included-plugins/mp-core-check.php' );
-	
-}
-/**
- * If mp_core is active but mp_stacks isn't, stop and install it now
- */
-elseif(!function_exists('mp_stacks_textdomain')){
-	/**
-	 * Include Plugin Checker
-	 */
-	require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/plugin-checker.php' );
-	
-	/**
-	 * Check if wp_html_in_post in installed
-	 */
-	include_once( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/included-plugins/mp-stacks.php' );
-}
-/**
- * Otherwise, if mp_core and mp_stacks are installed, carry out the plugin's functions
- */
-else{
+	if (!function_exists('mp_core_textdomain')){
 		
+		/**
+		 * Include Plugin Checker
+		 */
+		require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/plugin-checker.php' );
+		
+		/**
+		 * Check if wp_core in installed
+		 */
+		include_once( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/included-plugins/mp-core-check.php' );
+		
+	}
 	/**
-	 * Modify Metabox for HTML repeater for posts
+	 * If mp_core is active but mp_stacks isn't, stop and install it now
 	 */
-	require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/metaboxes/mp-stacks-text/mp-stacks-text.php' );
-	
+	elseif(!function_exists('mp_stacks_textdomain')){
+		/**
+		 * Include Plugin Checker
+		 */
+		require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/plugin-checker.php' );
+		
+		/**
+		 * Check if wp_html_in_post in installed
+		 */
+		include_once( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/included-plugins/mp-stacks.php' );
+	}
 	/**
-	 * Filters which modify the text on putput
+	 * Otherwise, if mp_core and mp_stacks are installed, carry out the plugin's functions
 	 */
-	require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/misc-functions/text-actions.php' );
-	
+	else{
+			
+		/**
+		 * Modify Metabox for HTML repeater for posts
+		 */
+		require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/metaboxes/mp-stacks-text/mp-stacks-text.php' );
+		
+		/**
+		 * Filters which modify the text on putput
+		 */
+		require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/misc-functions/text-actions.php' );
+		
+	}
 }
+add_action('plugins_loaded', 'mp_stacks_text_include_files', 9);
