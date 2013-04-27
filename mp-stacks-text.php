@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Move Plugins - Stacks Text Addon
+Plugin Name: MP Stacks Text Addon
 Plugin URI: http://moveplugins.com
 Description: This is an addon to the mp_stacks plugin which gives a range of additional options for formatting text in a stack.
 Version: 1.0
-Author: Phil Johnston
+Author: Move Plugins
 Author URI: http://moveplugins.com
 Text Domain: mp_stacks_text
 Domain Path: languages
@@ -133,6 +133,11 @@ function mp_stacks_text_include_files(){
 	 */
 	else{
 			
+		/**
+		 * Update script - keeps this plugin up to date
+		 */
+		require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/updater/mp-stacks-text-update.php' );
+		
 		/**
 		 * Modify Metabox for HTML repeater for posts
 		 */
