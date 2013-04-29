@@ -8,7 +8,7 @@
 		$args = array(
 			'plugin_name' => 'MP Stacks', 
 			'plugin_message' => __('You require the Move Plugins Stacks plugin. Install it here.', 'mp_stacks_text'), 
-			'plugin_slug' => 'mp_stacks', 
+			'plugin_slug' => 'mp-stacks', 
 			'plugin_filename' => 'mp-stacks.php',
 			'plugin_required' => true,
 			'plugin_download_link' => 'http://moveplugins.com/repo/mp-stacks/?download=true'
