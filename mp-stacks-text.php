@@ -106,7 +106,7 @@ function mp_stacks_text_include_files(){
 		/**
 		 * Include Plugin Checker
 		 */
-		require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/plugin-checker.php' );
+		require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/class-plugin-checker.php' );
 		
 		/**
 		 * Check if wp_core in installed
@@ -118,10 +118,6 @@ function mp_stacks_text_include_files(){
 	 * If mp_core is active but mp_stacks isn't, stop and install it now
 	 */
 	elseif(!function_exists('mp_stacks_textdomain')){
-		/**
-		 * Include Plugin Checker
-		 */
-		require( MP_STACKS_TEXT_PLUGIN_DIR . 'includes/plugin-checker/plugin-checker.php' );
 		
 		/**
 		 * Check if wp_html_in_post in installed
