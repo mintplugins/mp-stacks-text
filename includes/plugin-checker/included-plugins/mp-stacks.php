@@ -3,8 +3,8 @@
  * Install mp_stacks Plugin
  *
  */
- if (!function_exists('mp_core_plugin_check')){
-	function mp_core_plugin_check() {
+ if (!function_exists('mp_stacks_plugin_check')){
+	function mp_stacks_plugin_check() {
 		$args = array(
 			'plugin_name' => 'MP Stacks', 
 			'plugin_message' => __('You require the Move Plugins Stacks plugin. Install it here.', 'mp_stacks_text'), 
@@ -16,5 +16,5 @@
 		$mp_core_plugin_check = new MP_CORE_Plugin_Checker($args);
 	}
  }
-add_action( 'admin_init', 'mp_core_plugin_check' );
+add_action( 'admin_init', 'mp_stacks_plugin_check' );
 
