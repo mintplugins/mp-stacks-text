@@ -9,7 +9,7 @@
 			'software_name' => 'MP Stacks Text Addon', //<- The exact name of this Plugin. Make sure it matches the title in your mp_stacks_text, edd, and the WP.org repo
 			'software_api_url' => 'http://repo.moveplugins.com',//The URL where EDD and mp_stacks_text are installed and checked
 			'software_filename' => 'mp-stacks-text.php',
-			'software_licensed' => true, //<-Boolean
+			'software_licensed' => false, //<-Boolean
 		);
 		
 		//Since this is a plugin, call the Plugin Updater class
