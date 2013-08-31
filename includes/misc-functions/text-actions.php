@@ -24,9 +24,6 @@ function mp_stacks_text_title_style($post_id){
 	
 	//Tablet sized css
 	echo !empty($brick_line_1_font_size) ? '<style scoped>@media screen and (max-width: 980px){#mp-brick-' . $post_id . ' .mp-brick-text-line-1 { font-size: ' . ($brick_line_1_font_size*.70) . 'px; }} </style>' : NULL;
-	
-	//Mobile sized css
-	//echo !empty($brick_line_1_font_size) ? '<style scoped>@media screen and (max-width: 420px){#mp-brick-' . $post_id . ' .mp-brick-text-line-1 { font-size: ' . ($brick_line_1_font_size*.30) . 'px; }} </style>' : NULL;
 
 }
 add_action('mp_stacks_text_action', 'mp_stacks_text_title_style', 10, 1);
@@ -56,9 +53,6 @@ function mp_stacks_text_text_style($post_id){
 		
 	//Tablet sized css
 	echo !empty($brick_line_2_font_size) ? '<style scoped>@media screen and (max-width: 980px){#mp-brick-' . $post_id . ' .mp-brick-text-line-2 { font-size: ' . ($brick_line_2_font_size*.70) . 'px; }} </style>' : NULL;
-	
-	//Mobile sized css
-	//echo !empty($brick_line_2_font_size) ? '<style scoped>@media screen and (max-width: 420px){#mp-brick-' . $post_id . ' .mp-brick-text-line-2 { font-size: ' . ($brick_line_2_font_size*.30) . 'px; }} </style>' : NULL;
-	
+		
 }
 add_action('mp_stacks_text_action', 'mp_stacks_text_text_style', 10, 1);

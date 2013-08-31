@@ -3,7 +3,7 @@
 Plugin Name: MP Stacks Text Addon
 Plugin URI: http://moveplugins.com
 Description: This is an addon to the mp_stacks plugin which gives a range of additional options for formatting text in a stack.
-Version: beta1.0.0.6
+Version: beta1.0.0.7
 Author: Move Plugins
 Author URI: http://moveplugins.com
 Text Domain: mp_stacks_text
