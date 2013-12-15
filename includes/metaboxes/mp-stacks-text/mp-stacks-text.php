@@ -25,13 +25,6 @@ function mp_stacks_text_additional_items_array($items_array) {
 			'field_description' => 'Enter the size (in pixels).',
 			'field_type' => 'number',
 			'field_value' => ''
-		),
-		array(
-			'field_id'	 => 'brick_line_1_font_css',
-			'field_title' => __( 'Line 1 Font CSS (Optional)', 'mp_stacks'),
-			'field_description' => 'Enter some styles for the title.',
-			'field_type' => 'textarea',
-			'field_value' => ''
 		)
 	);
 		
@@ -55,13 +48,6 @@ function mp_stacks_text_additional_items_array($items_array) {
 			'field_title' => __( 'Text Font Size (Optional)', 'mp_stacks'),
 			'field_description' => 'Enter the size for the title (in pixels).',
 			'field_type' => 'number',
-			'field_value' => ''
-		),
-		array(
-			'field_id'	 => 'brick_line_2_font_css',
-			'field_title' => __( 'Text Font CSS (Optional)', 'mp_stacks'),
-			'field_description' => 'Enter some styles for the text.',
-			'field_type' => 'textarea',
 			'field_value' => ''
 		)
 	);
