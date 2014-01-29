@@ -53,4 +53,4 @@ function mp_stacks_text_additional_items_array($items_array) {
 	);
     return $return_items_array;
 }
-add_filter('mp_stacks_text_items_array','mp_stacks_text_additional_items_array');
+//add_filter('mp_stacks_text_items_array','mp_stacks_text_additional_items_array');
